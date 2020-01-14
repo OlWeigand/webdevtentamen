@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Forumposts', {
+    return queryInterface.createTable('Users', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,14 +11,23 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      body: {
-        type: Sequelize.STRING(2500)
+      password: {
+        type: Sequelize.STRING
       },
-      user: {
+      pin: {
         type: Sequelize.INTEGER
       },
-      timestamp: {
-        type: Sequelize.DATE
+      role: {
+        type: Sequelize.INTEGER
+      },
+      email: {
+        type: Sequelize.STRING
+      },
+      address: {
+        type: Sequelize.STRING
+      },
+      postcode: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -31,6 +40,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Forumposts');
+    return queryInterface.dropTable('Users');
   }
 };
