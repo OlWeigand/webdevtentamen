@@ -10,7 +10,6 @@ router.get('/', (req, res, next) => {
         path: '/users',
         title: 'All Users',
         description: 'What function does everybody has?',
-        users: users,
         add: 'Add User',
         link: 'users/add-user'
     });

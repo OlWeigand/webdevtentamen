@@ -1,10 +1,10 @@
 body {
-    color: yellowgreen;
+    color: darkblue;
     font-size: 32px;
 }
 
 .divcontent {
-    background-image: url("http://destinationmarketingservices.co.za/wordpress/wp-content/gallery/conferences/conferences1.jpg");
+    background-image: url("https://pptsolutions.nl/wp-content/upload_folders/pptsolutions.nl/2018/02/NS-bedrijfspresentatie-header-1920x500.jpg");
     width: 900px;
     height: 650px;
     margin-left: auto;
@@ -15,7 +15,7 @@ body {
 
 #heading {
     font-family: "Abril Fatface", serif;
-    color: yellowgreen;
+    color: yellow;
     font-size: 60px;
     padding-left: unset;
     padding-right: unset;
@@ -30,7 +30,7 @@ body {
  */
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(0, 18, 138, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -39,7 +39,7 @@ body {
     transition: ease-in-out color .15s;
 }
 .site-header a:hover {
-    color: #fff;
+    color: yellow;
     text-decoration: none;
 }
 
