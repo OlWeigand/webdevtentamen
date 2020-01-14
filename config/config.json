@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "oldrik",
+    "password": "mAE2yMtGJ0mk",
+    "database": "oldrik_",
+    "host": "https://adsd2019.clow.nl/~oldrik/",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "oldrik",
+    "password": "mAE2yMtGJ0mk",
+    "database": "oldrik_",
+    "host": "https://adsd2019.clow.nl/~oldrik/",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "oldrik",
+    "password": "mAE2yMtGJ0mk",
+    "database": "oldrik_",
+    "host": "https://adsd2019.clow.nl/~oldrik/",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
