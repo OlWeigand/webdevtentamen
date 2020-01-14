@@ -7,11 +7,17 @@ const express = require('express');
 
 const app = express();
 
+//Models
+const users = require('./models/user');
+const foundobjects = require('./models/foundobject');
+const forumposts = require('./models/forumpost');
+const comments = require('./models/comment');
+
 //import routes
-const userRoutes = require('./routes/users');
-const objectRoutes = require('./routes/objects');
-const postRoutes = require('./routes/posts');
-const commentRoutes = require('./routes/comments');
+const usersRoutes = require('./routes/users');
+const objectsRoutes = require('./routes/objects');
+const postsRoutes = require('./routes/posts');
+const commentsRoutes = require('./routes/comments');
 // view engine setup
 app.set('view engine', 'ejs');
 
@@ -21,15 +27,15 @@ app.use(bodyParser.urlencoded( // routes 7-12
 //static files
 app.use(express.static(path.join(__dirname,'public')));
 
-app.use('/users', userRoutes);
-app.use('/objects', objectRoutes);
-app.use('/posts', postRoutes);
-app.use('/comments', commentRoutes);
+app.use('/users', usersRoutes);
+app.use('/objects', objectsRoutes);
+app.use('/posts', postsRoutes);
+app.use('/comments', commentsRoutes);
 
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Lost & Found',
-        description: 'NS Lost & Found'
+        title: 'Lost and Found',
+        description: 'NS Lost and Found'
     });
 });
 

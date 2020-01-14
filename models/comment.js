@@ -1,11 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Comment = sequelize.define('Comment', {
-    body: DataTypes.STRING,
+    body: DataTypes.STRING(2500),
     timestamp: DataTypes.DATE
   }, {});
   Comment.associate = function(models) {
-    // associations can be defined here
+    Comment.belongsTo(models.Forumpost);
+    Comment.belongsTo(models.User);
   };
   return Comment;
 };

@@ -10,7 +10,9 @@ module.exports = (sequelize, DataTypes) => {
     postcode: DataTypes.STRING
   }, {});
   User.associate = function(models) {
-    // associations can be defined here
+    User.hasMany(models.FoundObject);
+    User.hasMany(models.Forumpost);
+    User.hasMany(models.Comment);
   };
   return User;
 };
